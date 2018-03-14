@@ -23,13 +23,6 @@ xSL19::xSL19(void)
 	MLX90614_I2C_ADDR = 0x5A;
 }
 
-xSL19::xSL19(uint8_t addr) 
-{
-	ambient_temp = 0;
-	object_temp = 0;
-	MLX90614_I2C_ADDR = addr;
-}
-
 /********************************************************
  	Configure Sensor
 *********************************************************/
