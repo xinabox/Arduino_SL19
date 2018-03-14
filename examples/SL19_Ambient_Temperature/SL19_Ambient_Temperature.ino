@@ -3,7 +3,7 @@
   Infra Red Thermometer
 
   You can buy one on our store!
-  -----> https://xinabox.cc/products/SW19
+  -----> https://xinabox.cc/products/SL19
 
   This example request an ambient temperature meausrement
   to be made by the SL19 and display the data over
