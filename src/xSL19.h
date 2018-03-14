@@ -42,7 +42,6 @@ class xSL19: public xCoreClass
 		* Creates a new instance of Sensor class.
 		*/	
 		xSL19();
-		xSL19(uint8_t addr);
 
 		/*
 		* Runs the setup of the sensor. 
