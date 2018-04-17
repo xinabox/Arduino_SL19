@@ -93,7 +93,7 @@ class xSL19: public xCoreClass
 
 	private:
 		/*
-		* Reads RAW lUX data.
+		* Reads RAW temperature data.
 		*
 		* @return none
 		*/		
@@ -107,7 +107,5 @@ class xSL19: public xCoreClass
 		double 		ambient_temp;
 		double 		object_temp;
 };
-
-extern xSL19 SL01;
 
 #endif
