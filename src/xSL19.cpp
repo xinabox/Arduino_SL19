@@ -84,18 +84,30 @@ float xSL19::getObjectTempF(void)
 void xSL19::readAmbient(void) 
 {
 	float tempData; 
-	tempData = (uint16_t)xCore.read24(MLX90614_I2C_ADDR, MLX90614_REG_TA);
+	tempData = readTemp(MLX90614_REG_TA);
 	tempData *= .02;
-  	tempData  -= 273.15;
+  	tempData -= 273.15;
 	ambient_temp = tempData;
 }
 
 void xSL19::readObject(void) 
 {
 	float tempData;
-	tempData =  (uint16_t)xCore.read24(MLX90614_I2C_ADDR, MLX90614_REG_TOBJ1);
+	tempData = readTemp(MLX90614_REG_TOBJ1);
   	tempData *= .02;
-  	tempData  -= 273.15;
+  	tempData -= 273.15;
 	object_temp = tempData;
+}
+
+uint16_t xSL19::readTemp(uint8_t reg)
+{
+  	uint32_t data;
+  	data = xCore.read24(MLX90614_I2C_ADDR, reg);
+
+	uint8_t HB,LB;
+	HB = data >> 8;
+	LB = data >> 16;
+
+  	return ((HB << 8)| LB);
 }
 
