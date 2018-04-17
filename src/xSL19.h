@@ -19,7 +19,7 @@
 // MLX90614 Register Descriptions
 #define MLX90614_REG_RAWIR1 0x04
 #define MLX90614_REG_RAWIR2 0x05
-#define MLX90614_REG_TA 	0x06
+#define MLX90614_REG_TA 		0x06
 #define MLX90614_REG_TOBJ1 	0x07
 #define MLX90614_REG_TOBJ2 	0x08
 #define MLX90614_REG_TOMAX 	0x20
@@ -99,13 +99,14 @@ class xSL19: public xCoreClass
 		*/		
 		void 	readAmbient(void);
 		void	readObject(void);
+		uint16_t readTemp(uint8_t reg);
 
 		// Used to store device I2C Address
 		uint8_t 	MLX90614_I2C_ADDR;
 
 		// Used to store temperature Data
-		double 		ambient_temp;
-		double 		object_temp;
+		float 		ambient_temp;
+		float 		object_temp;
 };
 
 #endif
