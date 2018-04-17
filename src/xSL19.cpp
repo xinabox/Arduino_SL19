@@ -28,11 +28,7 @@ xSL19::xSL19(void)
 *********************************************************/
 bool xSL19::begin(void)
 {
-	if(xCore.ping(MLX90614_I2C_ADDR)){
-		return true;
-	} else {
-		return false;
-	}
+	return xCore.ping(MLX90614_I2C_ADDR);
 }
 
 /********************************************************
@@ -57,7 +53,7 @@ float xSL19::getAmbientTempC(void)
 *********************************************************/
 float xSL19::getAmbientTempF(void)
 {
-    return ((ambient_temp * 1.8) + 32);	
+	return ((ambient_temp * 1.8) + 32);	
 }
 
 /********************************************************
@@ -86,7 +82,7 @@ void xSL19::readAmbient(void)
 	float tempData; 
 	tempData = readTemp(MLX90614_REG_TA);
 	tempData *= .02;
-  	tempData -= 273.15;
+  tempData -= 273.15;
 	ambient_temp = tempData;
 }
 
@@ -94,20 +90,20 @@ void xSL19::readObject(void)
 {
 	float tempData;
 	tempData = readTemp(MLX90614_REG_TOBJ1);
-  	tempData *= .02;
-  	tempData -= 273.15;
+  tempData *= .02;
+  tempData -= 273.15;
 	object_temp = tempData;
 }
 
 uint16_t xSL19::readTemp(uint8_t reg)
 {
-  	uint32_t data;
-  	data = xCore.read24(MLX90614_I2C_ADDR, reg);
+  uint32_t data;
+  data = xCore.read24(MLX90614_I2C_ADDR, reg);
 
 	uint8_t HB,LB;
 	HB = data >> 8;
 	LB = data >> 16;
 
-  	return ((HB << 8)| LB);
+  return ((HB << 8)| LB);
 }
 
