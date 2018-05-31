@@ -1,5 +1,5 @@
 # ☒CHIP SL19
-
+<img src="extras/SL19-V1.0.0.JPG" width="35%" height="auto" align="right">
 Infra Red Thermometer.
 
 This module can be purchased on [Xinabox CC](https://xinabox.cc/products/SL19/).
