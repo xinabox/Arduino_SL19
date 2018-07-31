@@ -10,12 +10,12 @@
 # Methods and Functions		(KEYWORD2)
 #######################################
 
-begin   					KEYWORD2
-poll			 			KEYWORD2
-getAmbientTempC				KEYWORD2
-getAmbientTempF				KEYWORD2
-getObjectTempC				KEYWORD2
-getObjectTempF				KEYWORD2
+begin	KEYWORD2
+poll	KEYWORD2
+getAmbientTempC	KEYWORD2
+getAmbientTempF	KEYWORD2
+getObjectTempC	KEYWORD2
+getObjectTempF	KEYWORD2
 
 #######################################
 # Constants 		   		(LITERAL1)
