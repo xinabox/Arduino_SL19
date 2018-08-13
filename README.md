@@ -13,7 +13,8 @@ Module is based off the MLX90614 Remote 4-Bit I2C and SMBus I/O Expander.
 
 ## Requirements
   - [☒Core Library](https://github.com/xinabox/xCore)
-  - [Arduino IDE 1.8.1](https://www.arduino.cc/en/main/software)
+  - [Arduino IDE](https://www.arduino.cc/en/main/software)
+  - ☒CHIP [Core](https://xinabox.cc/collections/core)
   
 ## Installation Guide
 To install the libraries please followed the guide provided on the [Arduino Website](https://www.arduino.cc/en/Guide/Libraries) under "**Importing a .zip Library**".
