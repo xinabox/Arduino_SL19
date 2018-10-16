@@ -10,7 +10,7 @@
 	MLX90614	- https://www.melexis.com/-/media/files/documents/datasheets/mlx90614-datasheet-melexis.pdf
 */
 
-#include "Arduino_SL19.h"
+#include "arduino-SL19.h"
 
 /*---Public Function---*/
 /********************************************************

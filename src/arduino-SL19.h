@@ -10,8 +10,8 @@
 	MLX90614	- https://www.melexis.com/-/media/files/documents/datasheets/mlx90614-datasheet-melexis.pdf
 */
 
-#ifndef Arduino_SL19_h
-#define Arduino_SL19_h
+#ifndef arduino-SL19_h
+#define arduino-SL19_h
 
 // Include File Headers
 #include "xCore.h"
