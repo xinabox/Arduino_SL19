@@ -15,7 +15,7 @@
 
 *************************************************************/
 
-#include <arduino-SL19.h>
+#include <xSL19.h>
 #include <xCore.h>
 
 xSL19 SL19;
