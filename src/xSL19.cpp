@@ -98,7 +98,7 @@ void xSL19::readObject(void)
 uint16_t xSL19::readTemp(uint8_t reg)
 {
   uint32_t data;
-  data = xCore.read24(MLX90614_I2C_ADDR, reg);
+  data = read24(MLX90614_I2C_ADDR, reg);
 
 	uint8_t HB,LB;
 	HB = data >> 8;
@@ -107,3 +107,18 @@ uint16_t xSL19::readTemp(uint8_t reg)
   return ((HB << 8)| LB);
 }
 
+uint32_t xSL19::read24(byte device, byte reg) {
+	uint32_t value = 0;
+	Wire.beginTransmission((uint8_t)device);
+	Wire.write((uint8_t)reg);
+	Wire.endTransmission(false);
+	Wire.requestFrom((uint8_t)device, (uint8_t)3);
+	if(Wire.available()){	
+		value = Wire.read();
+		value <<= 8;
+		value |= Wire.read();
+		value <<= 8;
+		value |= Wire.read();
+	}
+	return value;
+}
