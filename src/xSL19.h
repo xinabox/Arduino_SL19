@@ -100,6 +100,7 @@ class xSL19: public xCoreClass
 		void 	readAmbient(void);
 		void	readObject(void);
 		uint16_t readTemp(uint8_t reg);
+		uint32_t read24(byte device, byte reg);
 
 		// Used to store device I2C Address
 		uint8_t 	MLX90614_I2C_ADDR;
