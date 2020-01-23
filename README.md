@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/xinabox/arduino-SL19.svg?branch=master)](https://travis-ci.org/xinabox/arduino-SL19)
+[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-SL19.svg)](https://github.com/xinabox/arduino-SL19/issues)
+
 # ☒CHIP SL19
 <img src="extras/SL19-V1.0.0.JPG" width="35%" height="auto" align="right">
 Infra Red Thermometer.
