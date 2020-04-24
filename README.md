@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/xinabox/arduino-SL19.svg?branch=master)](https://travis-ci.org/xinabox/arduino-SL19)
-[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-SL19.svg)](https://github.com/xinabox/arduino-SL19/issues)
+[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-SL19.svg)](https://github.com/xinabox/arduino-SW01/issues) ![GitHub Commit](https://img.shields.io/github/last-commit/xinabox/arduino-SL19) ![Maintained](https://img.shields.io/maintenance/yes/2020)
 
 # ☒CHIP SL19
 <img src="extras/SL19-V1.0.0.JPG" width="35%" height="auto" align="right">
